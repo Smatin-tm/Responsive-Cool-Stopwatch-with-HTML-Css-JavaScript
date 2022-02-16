@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:0;
+    height:100vh;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom left, rgb(73, 72, 72), rgb(0, 0, 0));
+}
+
+.watch{
+    width:100%;
+    max-width: 360px;
+    text-align: center;
+}
+.watch .time{
+    font-family: 'Odibee Sans', sans-serif;
+    font-size: 6rem;
+    color:rgb(255, 72, 0);
+    margin-bottom: 20px;
+    
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.controls{
+    width:120px;
+    height:70px;
+    margin: 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+    color:#333;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: ubuntu;
+    
+}
+.controls:active{
+    transform:scale(0.97);
+}
+
+
+@media only screen and (max-width: 400px){
+    .watch .time{
+        font-family: 'Odibee Sans', sans-serif;
+        font-size: 5rem;
+        color:rgb(255, 72, 0);
+        margin-bottom: 20px;
+        
+    }
+   
+    .controls{
+        width:90px;
+        height:50px;
+        margin: 15px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.842);
+        color:#333;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        font-family: raleway;
+        font-weight: bold;
+        
+    }
+
+    .controls:active{
+        transform:scale(0.97);
+
+        box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.76);
+        
+    }
+}
+
+
+
